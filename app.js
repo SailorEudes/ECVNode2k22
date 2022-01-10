@@ -10,6 +10,10 @@ var models = require('./models')
 
 // routes
 var books = require('./routes/books')
+var comments = require('./routes/comments')
+var posts = require('./routes/posts')
+var roles = require('./routes/roles')
+var users = require('./routes/users')
 
 //Sync Database
 models.sequelize
@@ -30,6 +34,10 @@ app.use(
 
 // register routes
 app.use('/books', books)
+app.use('/comments', comments)
+app.use('/posts', posts)
+app.use('/roles', roles)
+app.use('/users', users)
 
 // index path
 app.get('/', function (req, res) {
