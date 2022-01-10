@@ -1,6 +1,7 @@
 var express = require('express')
 var app = express()
 var bodyParser = require('body-parser')
+app.set('view engine', 'ejs');
 var sqlite = require('sqlite3')
 var env = require('dotenv')
 var port = process.env.PORT || 8080
@@ -38,6 +39,7 @@ app.use('/comments', comments)
 app.use('/posts', posts)
 app.use('/roles', roles)
 app.use('/users', users)
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
 // index path
 app.get('/', function (req, res) {
