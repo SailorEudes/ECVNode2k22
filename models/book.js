@@ -1,15 +1,14 @@
 module.exports = function (sequelize, Sequalize) {
-  var PostSchema = sequelize.define(
-    'Post',
+  var BookSchema = sequelize.define(
+    'Book',
     {
       title: Sequalize.STRING,
-      content: Sequalize.TEXT,
-      date: Sequalize.DATE,
       author: Sequalize.STRING,
+      category: Sequalize.STRING,
     },
     {
       timestamps: false,
     },
   )
-  return PostSchema
+  return BookSchema
 }

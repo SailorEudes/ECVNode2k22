@@ -2,7 +2,6 @@ module.exports = function (sequelize, Sequalize) {
   var CommentSchema = sequelize.define(
     'Comment',
     {
-      id: Sequalize.INTEGER,
       title: Sequalize.STRING,
       content: Sequalize.TEXT,
       date: Sequalize.DATE,
