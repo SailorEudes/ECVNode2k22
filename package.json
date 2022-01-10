@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "node2k22",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -17,5 +17,18 @@
     "sequelize": "^6.12.5",
     "sequelize-cli": "^6.3.0",
     "sqlite3": "^5.0.2"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SailorEudes/ECVNode2k22.git"
+  },
+  "author": "Chris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SailorEudes/ECVNode2k22/issues"
+  },
+  "homepage": "https://github.com/SailorEudes/ECVNode2k22#readme",
+  "description": ""
 }
